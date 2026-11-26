@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הצהרת נגישות | MAYA SWIM</title>
+  <meta name="theme-color" content="#FFF1B8">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement, l = null, a = null;
+      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("maya-lang"); a = JSON.parse(localStorage.getItem("maya-a11y") || "null"); } catch (e) {}
+      if (l === "en") { d.lang = "en"; d.dir = "ltr"; }
+      if (a) {
+        if (a.scale) d.style.fontSize = [100, 112.5, 125, 137.5][a.scale] + "%";
+        ["contrast", "links", "font", "noanim"].forEach(function (k) { if (a[k]) d.classList.add("a11y-" + k); });
+      }
+    })();
+  </script>
+</head>
+<body data-page="accessibility" data-title-key="page.a11y">
+
+<!-- ===== Icons (SVG sprite) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-mark" viewBox="0 0 48 48"><path d="M13 29 A11 11 0 0 1 35 29 Z" fill="#EBC15A"/><path d="M5 32 Q 10.5 28 16 32 T 27 32 T 38 32 T 44 31" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M10 38 Q 15.5 34 21 38 T 32 38 T 40 37.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.3 20.7l4.4-1.1A8.8 8.8 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.3c.3-.6.7-.6 1-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .5-.1.6l-.6.7c-.1.1-.1.3 0 .5a6.2 6.2 0 0 0 2.6 2.4c.2.1.4.1.5 0l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .9-.6 1.8-1.5 2-1 .3-2.4.1-4.2-1.1a9.8 9.8 0 0 1-3.2-3.6c-.6-1.2-.5-2.5-.1-3.4z" fill="currentColor"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-a11y" viewBox="0 0 24 24"><circle cx="12" cy="4.4" r="2" fill="currentColor"/><path d="M4.5 8.6c4.6 1.2 10.4 1.2 15 0M12 9.8v4.6m0 0l-3.4 6.2M12 14.4l3.4 6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sketch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l1.1-4.3L16.4 4.4a1.9 1.9 0 0 1 2.7 0l.5.5a1.9 1.9 0 0 1 0 2.7L9.3 17.9z"/><path d="M14.6 6.2l3.2 3.2M4 21.5h16"/></g></symbol>
+    <symbol id="i-fabric" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v12l-2.3 2.3L14.3 16 12 18.3 9.7 16l-2.4 2.3L5 16z"/><path d="M8.5 8h7M8.5 11.5h7"/></g></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6.5" cy="17.5" r="2.6"/><circle cx="17.5" cy="17.5" r="2.6"/><path d="M8.4 15.6L19 4M15.6 15.6L5 4"/></g></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1a1 1 0 0 1 .7.3l7 7a1 1 0 0 1 0 1.4l-8.1 8.1a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1-.3-.7z"/><circle cx="8.5" cy="8.5" r="1.6"/></g></symbol>
+    <symbol id="i-tape" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="11" r="6.5"/><circle cx="10" cy="11" r="2"/><path d="M10 17.5h10.5V14M13.5 17.5v-1.7M16.8 17.5v-1.7"/></g></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></g></symbol>
+    <symbol id="i-rings" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></g></symbol>
+    <symbol id="i-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1.2 1.2"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1.2-1.2"/></g></symbol>
+    <symbol id="i-font" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19L8 5h1l5 14M5 14.5h7"/><path d="M15.5 12.5h4.5V19M20 15.5h-2.8a1.7 1.7 0 0 0 0 3.5H20"/></g></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><g fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></g></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="skip">דלגי לתוכן הראשי</a>
+
+<header class="site-header legal-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" data-i18n-aria="nav.home" aria-label="MAYA SWIM — לדף הבית">
+      <svg aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="logo__text"><span class="logo__name">MAYA</span><span class="logo__sub">SWIM</span></span>
+    </a>
+    <div class="header-actions">
+      <a class="btn btn--ghost" href="index.html"><svg class="back-arrow" aria-hidden="true"><use href="#i-arrow"/></svg><span data-i18n="legal.back">חזרה לדף הבית</span></a>
+      <button class="icon-btn lang-btn" id="langBtn" type="button" lang="en" aria-label="Switch to English">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<article class="legal"><div class="container">
+<!-- לפני פרסום: השלימו את כל מה שמופיע בסוגריים מרובעים [ ], ובדקו שהאתר אכן עומד בתקן. מומלץ להתייעץ עם מורשה/ית נגישות שירות. -->
+<div data-only="he">
+  <h1>הצהרת נגישות</h1>
+  <p class="meta">עודכן לאחרונה: [תאריך]</p>
+
+  <h2>המחויבות שלנו</h2>
+  <p>ב-MAYA SWIM אנחנו רוצים שכל אחת ואחד יוכלו לגלוש באתר, להתרשם מהעיצובים וליצור איתנו קשר בקלות ובנוחות, כולל אנשים עם מוגבלות. האתר נבנה מתוך תשומת לב לנגישות, ואנחנו ממשיכים לבדוק ולשפר אותו.</p>
+
+  <h2>רמת הנגישות באתר</h2>
+  <p>האתר נבנה במטרה לעמוד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013, ובהמלצות התקן הישראלי ת"י 5568 לנגישות תכנים באינטרנט, המבוסס על הנחיות WCAG 2.0, ברמה AA.</p>
+
+  <h2>מה עשינו באתר</h2>
+  <ul>
+    <li>ניווט מלא באמצעות המקלדת, כולל קישור "דלגי לתוכן הראשי" בראש כל עמוד וסימון ברור של הרכיב שנמצא בפוקוס.</li>
+    <li>מבנה כותרות היררכי ותגיות סמנטיות (כותרת עליונה, ניווט, תוכן ראשי, כותרת תחתונה) שמסייעים לתוכנות קוראות מסך.</li>
+    <li>טקסט חלופי לאיורים ולתמונות, ותוויות ברורות לכל שדות הטפסים, כולל הודעות שגיאה שמוקראות.</li>
+    <li>ניגודיות צבעים בין טקסט לרקע, ואפשרות להגדיל את הטקסט דרך תפריט הנגישות או הגדלת התצוגה בדפדפן.</li>
+    <li>התאמה לטלפונים ולטאבלטים.</li>
+    <li>כיבוד ההגדרה "הפחתת תנועה" של מערכת ההפעלה.</li>
+    <li>שתי שפות (עברית ואנגלית), עם כיוון קריאה מתאים לכל שפה.</li>
+    <li>תפריט נגישות (הכפתור העגול בפינת המסך) שמאפשר: הגדלה והקטנה של הטקסט, ניגודיות גבוהה, הדגשת קישורים, גופן קריא ועצירת אנימציות. ההגדרות נשמרות בדפדפן שלך בלבד.</li>
+  </ul>
+
+  <h2>דפדפנים ותצוגה</h2>
+  <p>האתר נבנה לעבודה בגרסאות העדכניות של הדפדפנים Chrome, Safari, Firefox ו-Edge, במחשב ובנייד.</p>
+
+  <h2>מגבלות ידועות</h2>
+  <p>למרות המאמצים, ייתכן שחלקים מסוימים באתר עדיין אינם נגישים במלואם. בנוסף, קישורים לשירותים חיצוניים (כמו וואטסאפ ואינסטגרם) מובילים לאתרים שאינם בשליטתנו, והנגישות שלהם באחריות מפעיליהם.</p>
+
+  <h2>הסדרי נגישות פיזיים</h2>
+  <p>[לעדכן: אם יש ל-MAYA SWIM חנות, סטודיו או נקודת איסוף שמקבלים בה קהל, פרטו כאן את הסדרי הנגישות במקום. אם אין, כתבו זאת במפורש.]</p>
+
+  <h2>נתקלת בבעיה? נשמח לשמוע</h2>
+  <p>אם מצאת חלק באתר שאינו נגיש, או שיש לך הצעה לשיפור, פני אלינו ונעשה כל מאמץ לטפל בפנייה בהקדם.</p>
+  <div class="contact-box">
+    <p><strong>רכז/ת נגישות:</strong> [שם מלא]</p>
+    <p><strong>טלפון:</strong> [מספר טלפון]</p>
+    <p><strong>אימייל:</strong> <a class="js-mail" href="#"><span class="js-mail-text">hello@mayaswim.co.il</span></a></p>
+  </div>
+</div>
+
+<div data-only="en" lang="en" dir="ltr">
+  <h1>Accessibility statement</h1>
+  <p class="meta">Last updated: [date]</p>
+
+  <h2>Our commitment</h2>
+  <p>At MAYA SWIM we want everyone, including people with disabilities, to be able to browse the site, enjoy our designs and contact us easily and comfortably. The site was built with accessibility in mind, and we keep testing and improving it.</p>
+
+  <h2>Accessibility level</h2>
+  <p>The site was built with the aim of meeting the Israeli Equal Rights for Persons with Disabilities (Service Accessibility Adjustments) Regulations, 2013, and the recommendations of Israeli Standard SI 5568, which is based on the WCAG 2.0 guidelines, at level AA.</p>
+
+  <h2>What we have done</h2>
+  <ul>
+    <li>Full keyboard navigation, including a "Skip to main content" link at the top of every page and a clear focus indicator.</li>
+    <li>A logical heading structure and semantic landmarks (header, navigation, main content, footer) that help screen readers.</li>
+    <li>Text alternatives for illustrations and images, and clear labels for every form field, including announced error messages.</li>
+    <li>Color contrast between text and background, and the option to enlarge text through the accessibility menu or browser zoom.</li>
+    <li>A layout that adapts to phones and tablets.</li>
+    <li>Respect for the operating system's "reduce motion" setting.</li>
+    <li>Two languages (Hebrew and English), each with the correct reading direction.</li>
+    <li>An accessibility menu (the round button in the corner of the screen) that offers: larger or smaller text, high contrast, highlighted links, a readable font and stopping animations. Settings are saved in your browser only.</li>
+  </ul>
+
+  <h2>Browsers and display</h2>
+  <p>The site was built to work in current versions of Chrome, Safari, Firefox and Edge, on desktop and mobile.</p>
+
+  <h2>Known limitations</h2>
+  <p>Despite our efforts, some parts of the site may not yet be fully accessible. Links to external services (such as WhatsApp and Instagram) lead to sites we don't control, and their accessibility is the responsibility of their operators.</p>
+
+  <h2>Physical accessibility</h2>
+  <p>[To update: if MAYA SWIM has a shop, studio or pickup point open to the public, describe its accessibility arrangements here. If not, say so explicitly.]</p>
+
+  <h2>Found a problem? We'd love to hear</h2>
+  <p>If you find part of the site that isn't accessible, or have a suggestion, please contact us and we'll do our best to handle it promptly.</p>
+  <div class="contact-box">
+    <p><strong>Accessibility coordinator:</strong> [full name]</p>
+    <p><strong>Phone:</strong> [phone number]</p>
+    <p><strong>Email:</strong> <a class="js-mail" href="#"><span class="js-mail-text">hello@mayaswim.co.il</span></a></p>
+  </div>
+</div>
+</div></article>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" data-i18n-aria="nav.home" aria-label="MAYA SWIM — לדף הבית">
+          <svg aria-hidden="true" style="color:#FFF4D6"><use href="#i-mark"/></svg>
+          <span class="logo__text"><span class="logo__name">MAYA</span><span class="logo__sub">SWIM</span></span>
+        </a>
+        <p data-i18n="footer.tagline">עיצוב מקורי. מהדורות מוגבלות.</p>
+      </div>
+      <nav aria-labelledby="ft-nav">
+        <h2 id="ft-nav" data-i18n="footer.nav">ניווט</h2>
+        <ul>
+          <li><a href="index.html#collection" data-i18n="nav.collection">קולקציה</a></li>
+          <li><a href="index.html#story" data-i18n="nav.story">הסיפור</a></li>
+          <li><a href="index.html#sizes" data-i18n="nav.sizes">מדריך מידות</a></li>
+          <li><a href="index.html#faq" data-i18n="nav.faq">שאלות</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 data-i18n="footer.contact">יצירת קשר</h2>
+        <ul>
+          <li><a class="js-wa" data-wa-msg="wa.general" href="index.html#contact" target="_blank" rel="noopener"><span data-i18n="contact.wa.t">וואטסאפ</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span></a></li>
+          <li><a class="js-ig" href="index.html#contact" target="_blank" rel="noopener"><span data-i18n="contact.ig.t">אינסטגרם</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span></a></li>
+          <li><a class="js-mail" href="index.html#contact"><span class="js-mail-text">hello@mayaswim.co.il</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.legal">מידע</h2>
+        <ul>
+          <li><a href="accessibility.html" data-i18n="footer.a11y">הצהרת נגישות</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">מדיניות פרטיות</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="margin:0">© <span id="year">2026</span> MAYA SWIM. <span data-i18n="footer.rights">כל הזכויות שמורות.</span></p>
+      <a href="#main" data-i18n="footer.top">חזרה למעלה</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating buttons & accessibility panel ===== -->
+<a class="fab fab--wa js-wa" data-wa-msg="wa.general" href="index.html#contact" target="_blank" rel="noopener" data-i18n-aria="wa.float" aria-label="שיחה בוואטסאפ">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+<button class="fab fab--a11y" id="a11yBtn" type="button" aria-expanded="false" aria-controls="a11yPanel" data-i18n-aria="a11y.open" aria-label="תפריט נגישות">
+  <svg aria-hidden="true"><use href="#i-a11y"/></svg>
+</button>
+<div class="a11y-panel" id="a11yPanel" role="dialog" aria-modal="false" aria-labelledby="a11y-title" hidden>
+  <div class="a11y-panel__head">
+    <h2 id="a11y-title" data-i18n="a11y.title">הגדרות נגישות</h2>
+    <button class="icon-btn" type="button" data-a11y-close data-i18n-aria="a11y.close" aria-label="סגירת תפריט הנגישות"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="a11y-row">
+    <span data-i18n="a11y.textSize">גודל טקסט</span>
+    <span class="a11y-size">
+      <button class="icon-btn" type="button" data-a11y="smaller" data-i18n-aria="a11y.smaller" aria-label="הקטנת טקסט"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+      <button class="icon-btn" type="button" data-a11y="larger" data-i18n-aria="a11y.larger" aria-label="הגדלת טקסט"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+    </span>
+  </div>
+  <div class="a11y-grid">
+    <button class="a11y-toggle" type="button" data-a11y="contrast" aria-pressed="false"><svg aria-hidden="true"><use href="#i-contrast"/></svg><span data-i18n="a11y.contrast">ניגודיות גבוהה</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="links" aria-pressed="false"><svg aria-hidden="true"><use href="#i-link"/></svg><span data-i18n="a11y.links">הדגשת קישורים</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="font" aria-pressed="false"><svg aria-hidden="true"><use href="#i-font"/></svg><span data-i18n="a11y.font">גופן קריא</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="noanim" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg><span data-i18n="a11y.motion">עצירת אנימציות</span></button>
+  </div>
+  <div class="a11y-panel__foot">
+    <button type="button" data-a11y="reset" data-i18n="a11y.reset">איפוס הגדרות</button>
+    <a href="accessibility.html" data-i18n="a11y.statement">להצהרת הנגישות</a>
+  </div>
+</div>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

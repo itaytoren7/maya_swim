@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAYA SWIM — בגדי ים בעיצוב מקורי, במהדורות מוגבלות</title>
+  <meta name="description" content="MAYA SWIM: ביקיני ובגדי ים שלמים בעיצוב מקורי, במהדורות מוגבלות ובגוונים רכים של שמש. לכל גיל ולכל גוף.">
+  <meta name="theme-color" content="#FFF1B8">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <!-- Open Graph: אחרי חיבור הדומיין, החליפו את og:url ו-og:image לכתובת מלאה (https://הדומיין-שלכם/...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MAYA SWIM — בגדי ים בעיצוב מקורי, במהדורות מוגבלות">
+  <meta property="og:description" content="ביקיני ובגדי ים שלמים בעיצוב מקורי, במהדורות מוגבלות.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/frank-ruhl-libre-hebrew-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/assistant-hebrew-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    /* מחיל שפה והגדרות נגישות שמורות לפני הציור הראשון, כדי למנוע "קפיצה" */
+    (function () {
+      var d = document.documentElement, l = null, a = null;
+      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("maya-lang"); a = JSON.parse(localStorage.getItem("maya-a11y") || "null"); } catch (e) {}
+      if (l === "en") { d.lang = "en"; d.dir = "ltr"; }
+      if (a) {
+        if (a.scale) d.style.fontSize = [100, 112.5, 125, 137.5][a.scale] + "%";
+        ["contrast", "links", "font", "noanim"].forEach(function (k) { if (a[k]) d.classList.add("a11y-" + k); });
+      }
+    })();
+  </script>
+</head>
+<body data-page="home" data-title-key="meta.title">
+
+<!-- ===== Icons (SVG sprite) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-mark" viewBox="0 0 48 48"><path d="M13 29 A11 11 0 0 1 35 29 Z" fill="#EBC15A"/><path d="M5 32 Q 10.5 28 16 32 T 27 32 T 38 32 T 44 31" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M10 38 Q 15.5 34 21 38 T 32 38 T 40 37.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.3 20.7l4.4-1.1A8.8 8.8 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.3c.3-.6.7-.6 1-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .5-.1.6l-.6.7c-.1.1-.1.3 0 .5a6.2 6.2 0 0 0 2.6 2.4c.2.1.4.1.5 0l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .9-.6 1.8-1.5 2-1 .3-2.4.1-4.2-1.1a9.8 9.8 0 0 1-3.2-3.6c-.6-1.2-.5-2.5-.1-3.4z" fill="currentColor"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-a11y" viewBox="0 0 24 24"><circle cx="12" cy="4.4" r="2" fill="currentColor"/><path d="M4.5 8.6c4.6 1.2 10.4 1.2 15 0M12 9.8v4.6m0 0l-3.4 6.2M12 14.4l3.4 6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sketch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l1.1-4.3L16.4 4.4a1.9 1.9 0 0 1 2.7 0l.5.5a1.9 1.9 0 0 1 0 2.7L9.3 17.9z"/><path d="M14.6 6.2l3.2 3.2M4 21.5h16"/></g></symbol>
+    <symbol id="i-fabric" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v12l-2.3 2.3L14.3 16 12 18.3 9.7 16l-2.4 2.3L5 16z"/><path d="M8.5 8h7M8.5 11.5h7"/></g></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6.5" cy="17.5" r="2.6"/><circle cx="17.5" cy="17.5" r="2.6"/><path d="M8.4 15.6L19 4M15.6 15.6L5 4"/></g></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1a1 1 0 0 1 .7.3l7 7a1 1 0 0 1 0 1.4l-8.1 8.1a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1-.3-.7z"/><circle cx="8.5" cy="8.5" r="1.6"/></g></symbol>
+    <symbol id="i-tape" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="11" r="6.5"/><circle cx="10" cy="11" r="2"/><path d="M10 17.5h10.5V14M13.5 17.5v-1.7M16.8 17.5v-1.7"/></g></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></g></symbol>
+    <symbol id="i-rings" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></g></symbol>
+    <symbol id="i-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1.2 1.2"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1.2-1.2"/></g></symbol>
+    <symbol id="i-font" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19L8 5h1l5 14M5 14.5h7"/><path d="M15.5 12.5h4.5V19M20 15.5h-2.8a1.7 1.7 0 0 0 0 3.5H20"/></g></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><g fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></g></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="skip">דלגי לתוכן הראשי</a>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="logo" href="#top" data-i18n-aria="nav.home" aria-label="MAYA SWIM — לדף הבית">
+      <svg aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="logo__text"><span class="logo__name">MAYA</span><span class="logo__sub">SWIM</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav" data-i18n-aria="nav.label" aria-label="ניווט ראשי">
+      <ul>
+        <li><a href="#collection" data-i18n="nav.collection">קולקציה</a></li>
+        <li><a href="#story" data-i18n="nav.story">הסיפור</a></li>
+        <li><a href="#process" data-i18n="nav.process">התהליך</a></li>
+        <li><a href="#sizes" data-i18n="nav.sizes">מדריך מידות</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">שאלות</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">צרי קשר</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn lang-btn" id="langBtn" type="button" lang="en" aria-label="Switch to English">EN</button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" data-i18n-aria="nav.menu" aria-label="פתיחת התפריט">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">קולקציה 01 · שמש רכה</p>
+        <h1 class="hero__title reveal" id="hero-title" data-delay="1" data-i18n-html="hero.title">בגדי ים שמרגישים <em>כמו שמש רכה</em></h1>
+        <p class="hero__text reveal" data-delay="2" data-i18n="hero.text">ביקיני ובגדי ים שלמים בעיצוב מקורי, שנוצרים בכמויות קטנות ויוצאים במהדורות מוגבלות. לכל גיל, לכל גוף, לכל יום של קיץ.</p>
+        <div class="hero__ctas reveal" data-delay="3">
+          <a class="btn btn--primary" href="#collection"><span data-i18n="hero.cta1">לצפייה בקולקציה</span><svg class="flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--soft js-wa" data-wa-msg="wa.general" href="#contact" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="hero.cta2">דברי איתנו בוואטסאפ</span>
+            <span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span>
+          </a>
+        </div>
+        <ul class="hero__features reveal" data-delay="3">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.f1">עיצוב מקורי</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.f2">מהדורות מוגבלות</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.f3">לכל הגילאים</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__art" role="img" data-i18n-aria="hero.art" aria-label="איור של בגד ים שלם בכתף אחת וביקיני משולשים, על רקע שמש צהובה">
+        <div class="hero__rings" aria-hidden="true"></div>
+        <div class="hero__sun" aria-hidden="true"></div>
+        <img class="hero__piece hero__piece--one" src="assets/img/designs/sunbeam-cut.svg" alt="" width="190" height="404">
+        <img class="hero__piece hero__piece--two" src="assets/img/designs/limona-cut.svg" alt="" width="296" height="380">
+        <div class="hero__badge" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="badgeCircle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+            <circle cx="100" cy="100" r="98" fill="#FFFCF3"/>
+            <circle cx="100" cy="100" r="98" fill="none" stroke="#E9BE55" stroke-width="1.5"/>
+            <text direction="ltr" style="direction:ltr;unicode-bidi:embed" font-family="Assistant, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#3B3024">
+              <textPath href="#badgeCircle" textLength="470" lengthAdjust="spacing">MAYA SWIM ✦ LIMITED EDITION ✦ ORIGINAL ✦</textPath>
+            </text>
+          </svg>
+          <div class="hero__badge-center"><svg viewBox="0 0 48 48"><use href="#i-mark"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Marquee ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span class="marquee__item" data-i18n="marquee.1">עיצוב מקורי</span>
+        <span class="marquee__item" data-i18n="marquee.2">מהדורות מוגבלות</span>
+        <span class="marquee__item" data-i18n="marquee.3">ביקיני ובגדי ים שלמים</span>
+        <span class="marquee__item" data-i18n="marquee.4">לכל גיל ולכל גוף</span>
+        <span class="marquee__item" data-i18n="marquee.5">הזמנה בהתאמה אישית</span>
+      </div>
+      <div class="marquee__group">
+        <span class="marquee__item" data-i18n="marquee.1">עיצוב מקורי</span>
+        <span class="marquee__item" data-i18n="marquee.2">מהדורות מוגבלות</span>
+        <span class="marquee__item" data-i18n="marquee.3">ביקיני ובגדי ים שלמים</span>
+        <span class="marquee__item" data-i18n="marquee.4">לכל גיל ולכל גוף</span>
+        <span class="marquee__item" data-i18n="marquee.5">הזמנה בהתאמה אישית</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Collection ===== -->
+  <section class="section" id="collection" aria-labelledby="collection-title">
+    <div class="container">
+      <div class="collection-top">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="collection.eyebrow">הקולקציה</p>
+          <h2 class="h2" id="collection-title" data-i18n-html="collection.title">העיצובים <em>של העונה</em></h2>
+          <p class="lead" data-i18n="collection.text">לחצי על דגם כדי לראות את כל הפרטים. התאהבת? אפשר להזמין בהתאמה אישית.</p>
+        </div>
+        <div class="filters reveal" role="group" data-i18n-aria="filter.label" aria-label="סינון לפי סוג">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true" data-i18n="filter.all">הכל</button>
+          <button class="filter-btn" type="button" data-filter="bikini" aria-pressed="false" data-i18n="filter.bikini">ביקיני</button>
+          <button class="filter-btn" type="button" data-filter="onepiece" aria-pressed="false" data-i18n="filter.onepiece">בגד ים שלם</button>
+        </div>
+      </div>
+      <ul class="grid-designs" id="designGrid"></ul>
+      <noscript><p class="lead" data-i18n="collection.noscript">כדי לראות את הקולקציה, יש להפעיל JavaScript בדפדפן.</p></noscript>
+      <p class="visually-hidden" id="filterStatus" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ===== Design dialog ===== -->
+  <dialog class="design-dialog" id="designDialog" aria-labelledby="dlg-title">
+    <button class="icon-btn dialog-close" type="button" data-close data-i18n-aria="modal.close" aria-label="סגירה"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="dialog-grid">
+      <div class="dialog-media"><img id="dlg-img" src="assets/img/designs/limona.svg" alt="" width="400" height="500"></div>
+      <div class="dialog-body">
+        <p class="design-card__type" id="dlg-type"></p>
+        <h2 id="dlg-title"></h2>
+        <p class="lead" id="dlg-desc"></p>
+        <dl class="spec">
+          <dt data-i18n="modal.color">צבע</dt><dd id="dlg-color"></dd>
+          <dt data-i18n="modal.fabric">בד</dt><dd id="dlg-fabric"></dd>
+          <dt data-i18n="modal.sizes">מידות</dt><dd data-i18n="modal.sizesValue">XS–XXL · אפשר להתאים אישית</dd>
+          <dt data-i18n="modal.edition">מהדורה</dt><dd id="dlg-edition"></dd>
+        </dl>
+        <div class="dialog-actions">
+          <a class="btn btn--primary" id="dlg-wa" href="#contact" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="modal.whatsapp">אני רוצה אותו — לוואטסאפ</span>
+            <span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span>
+          </a>
+          <a class="btn btn--ghost" id="dlg-form" href="#contact" data-i18n="modal.form">שליחת פנייה</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===== Limited editions ===== -->
+  <section class="section section--tint" id="limited" aria-labelledby="limited-title">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow" data-i18n="limited.eyebrow">למה מהדורות מוגבלות?</p>
+        <h2 class="h2" id="limited-title" data-i18n-html="limited.title">פחות זה יותר. <em>הרבה</em> יותר.</h2>
+      </div>
+      <div class="limited-grid">
+        <article class="limited-item reveal">
+          <p class="limited-item__num" aria-hidden="true">01<small>/03</small></p>
+          <h3 data-i18n="limited.1.t">כמעט רק שלך</h3>
+          <p data-i18n="limited.1.d">כל עיצוב יוצא בכמות קטנה, כך שהסיכוי לפגוש את אותו בגד ים על החוף קטן מאוד.</p>
+        </article>
+        <article class="limited-item reveal" data-delay="1">
+          <p class="limited-item__num" aria-hidden="true">02<small>/03</small></p>
+          <h3 data-i18n="limited.2.t">תשומת לב לכל פרט</h3>
+          <p data-i18n="limited.2.d">כשהכמויות קטנות, אפשר לבדוק כל תפר, כל שרוך וכל גימור.</p>
+        </article>
+        <article class="limited-item reveal" data-delay="2">
+          <p class="limited-item__num" aria-hidden="true">03<small>/03</small></p>
+          <h3 data-i18n="limited.3.t">בלי עודפים</h3>
+          <p data-i18n="limited.3.d">מייצרים במידה, בלי מלאי שנשאר במחסן בסוף העונה.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Story ===== -->
+  <section class="section" id="story" aria-labelledby="story-title">
+    <div class="container story-grid">
+      <div class="story-text reveal">
+        <p class="eyebrow" data-i18n="story.eyebrow">הסיפור שלנו</p>
+        <h2 class="h2" id="story-title" data-i18n-html="story.title">נולדנו מאהבה לים, לשמש <em>ולרגע הזה</em></h2>
+        <p data-i18n="story.p1">MAYA SWIM נולד מתוך אהבה לים ולשמש, ולרגע הזה שבו בגד ים פשוט מרגיש נכון. רצינו ליצור עיצובים שמחמיאים לגוף בכל גיל, נעימים ללבישה ומיוחדים מספיק כדי שלא תפגשי אותם על כל חוף.</p>
+        <p data-i18n="story.p2">כל עיצוב מתחיל בסקיצה, עובר בחירה קפדנית של בד וגזרה, ויוצא לעולם במהדורה מוגבלת. ככה כל דגם נשאר מיוחד, בדיוק כמו מי שלובשת אותו.</p>
+        <dl class="stats">
+          <div><dt class="visually-hidden" data-i18n="story.stat1">עיצובים בקולקציה</dt><dd class="stat__num" id="statDesigns" style="margin:0">06</dd><dd class="stat__label" aria-hidden="true" data-i18n="story.stat1" style="margin:0">עיצובים בקולקציה</dd></div>
+          <div><dt class="visually-hidden" data-i18n="story.stat2">סגנונות: ביקיני ושלם</dt><dd class="stat__num" style="margin:0">02</dd><dd class="stat__label" aria-hidden="true" data-i18n="story.stat2" style="margin:0">סגנונות: ביקיני ושלם</dd></div>
+          <div><dt class="visually-hidden" data-i18n="story.stat3">טווח מידות</dt><dd class="stat__num" style="margin:0">XS–XXL</dd><dd class="stat__label" aria-hidden="true" data-i18n="story.stat3" style="margin:0">טווח מידות</dd></div>
+        </dl>
+      </div>
+      <figure class="story-card reveal" data-delay="1" style="margin:0">
+        <span class="story-card__sun" aria-hidden="true"></span>
+        <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-mark"/></svg>
+        <blockquote data-i18n="story.quote">בגד ים טוב הוא כזה ששוכחים שלובשים אותו.</blockquote>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Process ===== -->
+  <section class="section section--tint" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow" data-i18n="process.eyebrow">התהליך</p>
+        <h2 class="h2" id="process-title" data-i18n-html="process.title">מסקיצה <em>עד החוף</em></h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <div class="step__icon" aria-hidden="true"><svg><use href="#i-sketch"/></svg></div>
+          <span class="step__num" aria-hidden="true">01</span>
+          <h3 data-i18n="process.1.t">השראה וסקיצה</h3>
+          <p data-i18n="process.1.d">הכל מתחיל בדף לבן: צבע של שקיעה, קו של גל, תחושה של קיץ.</p>
+        </li>
+        <li class="step reveal" data-delay="1">
+          <div class="step__icon" aria-hidden="true"><svg><use href="#i-fabric"/></svg></div>
+          <span class="step__num" aria-hidden="true">02</span>
+          <h3 data-i18n="process.2.t">בד וצבע</h3>
+          <p data-i18n="process.2.d">בוחרים בדים נעימים, גמישים ועמידים, ומדייקים את הגוון עד שהוא בדיוק נכון.</p>
+        </li>
+        <li class="step reveal" data-delay="2">
+          <div class="step__icon" aria-hidden="true"><svg><use href="#i-scissors"/></svg></div>
+          <span class="step__num" aria-hidden="true">03</span>
+          <h3 data-i18n="process.3.t">גזרה ודגם</h3>
+          <p data-i18n="process.3.d">תופרים דגם, מודדים ומתקנים, עד שהגזרה יושבת בדיוק ומחמיאה בכל תנועה.</p>
+        </li>
+        <li class="step reveal" data-delay="3">
+          <div class="step__icon" aria-hidden="true"><svg><use href="#i-tag"/></svg></div>
+          <span class="step__num" aria-hidden="true">04</span>
+          <h3 data-i18n="process.4.t">מהדורה מוגבלת</h3>
+          <p data-i18n="process.4.d">העיצוב יוצא בכמות קטנה. כשהיא נגמרת, עוברים לעיצוב הבא.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Paths ===== -->
+  <section class="section" id="paths" aria-labelledby="paths-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="paths.eyebrow">מה אפשר לעשות כאן?</p>
+        <h2 class="h2" id="paths-title" data-i18n-html="paths.title">בחרי את <em>הדרך שלך</em></h2>
+      </div>
+      <div class="paths-grid">
+        <article class="path-card reveal">
+          <div class="path-card__icon" aria-hidden="true"><svg><use href="#i-tape"/></svg></div>
+          <h3 data-i18n="paths.1.t">הזמנה בהתאמה אישית</h3>
+          <p data-i18n="paths.1.d">אהבת דגם? נתאים אותו למידות ולסגנון שלך.</p>
+          <a class="link-arrow js-wa" data-wa-msg="wa.custom" href="#contact" target="_blank" rel="noopener"><span data-i18n="paths.1.cta">לפנייה בוואטסאפ</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="path-card reveal" data-delay="1">
+          <div class="path-card__icon" aria-hidden="true"><svg><use href="#i-bell"/></svg></div>
+          <h3 data-i18n="paths.2.t">עדכונים על השקות</h3>
+          <p data-i18n="paths.2.d">הצטרפי לרשימה ותשמעי ראשונה על קולקציות ומהדורות חדשות.</p>
+          <a class="link-arrow" href="#updates"><span data-i18n="paths.2.cta">להרשמה</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="path-card reveal" data-delay="2">
+          <div class="path-card__icon" aria-hidden="true"><svg><use href="#i-rings"/></svg></div>
+          <h3 data-i18n="paths.3.t">שיתופי פעולה</h3>
+          <p data-i18n="paths.3.d">חנויות, צלמות, יוצרות תוכן ומשפיעניות: נשמח לדבר.</p>
+          <a class="link-arrow" href="#contact" data-subject="collab"><span data-i18n="paths.3.cta">להצעת שיתוף פעולה</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="path-card reveal" data-delay="3">
+          <div class="path-card__icon" aria-hidden="true"><svg><use href="#i-ig"/></svg></div>
+          <h3 data-i18n="paths.4.t">סתם להתרשם</h3>
+          <p data-i18n="paths.4.d">גם זה מעולה. עקבי אחרינו באינסטגרם לעוד השראה.</p>
+          <a class="link-arrow js-ig" href="#contact" target="_blank" rel="noopener"><span data-i18n="paths.4.cta">לאינסטגרם</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Size guide ===== -->
+  <section class="section section--tint" id="sizes" aria-labelledby="sizes-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="sizes.eyebrow">מדריך מידות</p>
+        <h2 class="h2" id="sizes-title" data-i18n-html="sizes.title">למצוא את המידה <em>המושלמת</em></h2>
+        <p class="lead" data-i18n="sizes.text">בין שתי מידות? בטופ בחרי לפי היקף החזה, ובתחתון לפי היקף הירכיים. עדיין מתלבטת? כתבי לנו ונעזור.</p>
+      </div>
+      <div class="sizes-grid">
+        <div class="panel reveal">
+          <div class="panel-head">
+            <h3 data-i18n="sizes.table">טבלת מידות</h3>
+            <div class="unit-toggle" role="group" data-i18n-aria="sizes.unit.label" aria-label="יחידות מידה">
+              <button type="button" data-unit="cm" aria-pressed="true" data-i18n="sizes.unit.cm">ס״מ</button>
+              <button type="button" data-unit="in" aria-pressed="false" data-i18n="sizes.unit.in">אינץ׳</button>
+            </div>
+          </div>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="sizeCaption">
+            <table class="size-table">
+              <caption id="sizeCaption" data-i18n="sizes.caption.cm">טבלת מידות, היקפים בס״מ</caption>
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="sizes.th.size">מידה</th>
+                  <th scope="col" data-i18n="sizes.th.eu">EU</th>
+                  <th scope="col" data-i18n="sizes.th.bust">חזה</th>
+                  <th scope="col" data-i18n="sizes.th.waist">מותניים</th>
+                  <th scope="col" data-i18n="sizes.th.hips">ירכיים</th>
+                </tr>
+              </thead>
+              <tbody id="sizeRows"></tbody>
+            </table>
+          </div>
+          <div class="howto">
+            <svg viewBox="0 0 200 300" role="img" data-i18n-aria="sizes.figure" aria-label="איור של בובת תדמית עם שלושה קווי מדידה: חזה, מותניים וירכיים">
+              <rect x="88" y="16" width="24" height="18" rx="6" fill="#F3E3B5" stroke="#7A6036" stroke-width="2"/>
+              <path d="M60 40 Q100 28 140 40 Q152 62 146 92 Q140 120 128 142 Q150 170 152 200 Q150 224 100 228 Q50 224 48 200 Q50 170 72 142 Q60 120 54 92 Q48 62 60 40Z" fill="#FFF1B8" stroke="#7A6036" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M100 228 V284 M68 290 Q100 278 132 290" fill="none" stroke="#7A6036" stroke-width="3" stroke-linecap="round"/>
+              <g stroke="#C99A2E" stroke-width="2.2" stroke-dasharray="5 5" fill="none"><path d="M44 94 Q100 106 156 94"/><path d="M64 142 Q100 152 136 142"/><path d="M40 198 Q100 212 160 198"/></g>
+              <g font-family="Assistant, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+                <circle cx="24" cy="94" r="12" fill="#3B3024"/><text x="24" y="99" fill="#FFF1B8">1</text>
+                <circle cx="24" cy="142" r="12" fill="#3B3024"/><text x="24" y="147" fill="#FFF1B8">2</text>
+                <circle cx="24" cy="198" r="12" fill="#3B3024"/><text x="24" y="203" fill="#FFF1B8">3</text>
+              </g>
+            </svg>
+            <div>
+              <h4 data-i18n="sizes.how">איך מודדים?</h4>
+              <ol>
+                <li data-i18n-html="sizes.how.1"><strong>חזה:</strong> סביב החלק המלא ביותר של החזה, כשהסרט ישר לאורך הגב.</li>
+                <li data-i18n-html="sizes.how.2"><strong>מותניים:</strong> סביב החלק הצר ביותר של המותן, מעל הטבור.</li>
+                <li data-i18n-html="sizes.how.3"><strong>ירכיים:</strong> סביב החלק הרחב ביותר של הירכיים והישבן, כשהרגליים צמודות.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel finder reveal" data-delay="1">
+          <h3 data-i18n="finder.title">מחשבון מידה</h3>
+          <p data-i18n="finder.text">הזיני את ההיקפים שלך בס״מ, ונציע לך מידה.</p>
+          <form id="finderForm" novalidate>
+            <div class="finder-fields">
+              <div class="field"><label for="fd-bust" data-i18n="finder.bust">חזה (ס״מ)</label><input id="fd-bust" name="bust" type="number" inputmode="decimal" min="50" max="200" step="0.5"></div>
+              <div class="field"><label for="fd-waist" data-i18n="finder.waist">מותניים (ס״מ)</label><input id="fd-waist" name="waist" type="number" inputmode="decimal" min="40" max="200" step="0.5"></div>
+              <div class="field"><label for="fd-hips" data-i18n="finder.hips">ירכיים (ס״מ)</label><input id="fd-hips" name="hips" type="number" inputmode="decimal" min="50" max="200" step="0.5"></div>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" data-i18n="finder.btn">מצאי לי מידה</button>
+          </form>
+          <div aria-live="polite">
+            <div class="finder-result" id="finderResult" hidden></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container faq-wrap">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow" data-i18n="faq.eyebrow">שאלות נפוצות</p>
+        <h2 class="h2" id="faq-title" data-i18n-html="faq.title">כל מה שרצית <em>לשאול</em></h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary data-i18n="faq.1.q">אפשר לקנות ישירות באתר?</summary><p data-i18n="faq.1.a">האתר הוא חלון ראווה לעיצובים. כדי להזמין, שלחי הודעה בוואטסאפ או מלאי את טופס הפנייה, ונחזור אלייך עם כל הפרטים.</p></details>
+        <details class="reveal"><summary data-i18n="faq.2.q">מה זה אומר "מהדורה מוגבלת"?</summary><p data-i18n="faq.2.a">כל עיצוב מיוצר בכמות קטנה שנקבעת מראש. כשהכמות נגמרת, עוברים לעיצוב הבא, ולכן כדאי לא לחכות יותר מדי עם דגם שאהבת.</p></details>
+        <details class="reveal"><summary data-i18n="faq.3.q">אפשר להתאים דגם למידות שלי?</summary><p data-i18n="faq.3.a">כן. בהזמנה בהתאמה אישית אפשר להתאים מידה, וגם לשלב טופ ותחתון במידות שונות. כתבי לנו את ההיקפים שלך ונבדוק יחד מה אפשר.</p></details>
+        <details class="reveal"><summary data-i18n="faq.4.q">כמה זמן לוקח לקבל הזמנה?</summary><p data-i18n="faq.4.a">זה תלוי בדגם ובזמינות. נעדכן אותך בזמן משוער כבר בשיחה הראשונה.</p></details>
+        <details class="reveal"><summary data-i18n="faq.5.q">איך יודעים איזו מידה לבחור?</summary><p data-i18n="faq.5.a">השתמשי במדריך המידות ובמחשבון שבאתר. עדיין מתלבטת? שלחי לנו את ההיקפים ונמליץ.</p></details>
+        <details class="reveal"><summary data-i18n="faq.6.q">איך שומרים על בגד הים?</summary><p data-i18n="faq.6.a">שוטפים במים קרים מיד אחרי ים או בריכה, מכבסים ביד עם סבון עדין ומייבשים בצל, בלי מייבש ובלי סחיטה חזקה. כך הצבע והגמישות נשמרים לאורך זמן.</p></details>
+        <details class="reveal"><summary data-i18n="faq.7.q">יש משלוחים?</summary><p data-i18n="faq.7.a">את פרטי המשלוח או האיסוף נתאם איתך אישית בזמן ההזמנה.</p></details>
+        <details class="reveal"><summary data-i18n="faq.8.q">אתם עושים שיתופי פעולה?</summary><p data-i18n="faq.8.a">בשמחה. ספרי לנו על עצמך בטופס יצירת הקשר (בנושא "שיתוף פעולה") ונחזור אלייך.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Newsletter ===== -->
+  <section class="section" id="updates" aria-labelledby="news-title" style="padding-top:0">
+    <div class="container">
+      <div class="newsletter reveal">
+        <div>
+          <h2 id="news-title" data-i18n-html="news.title">להיות הראשונה <em>לדעת</em></h2>
+          <p data-i18n="news.text">השקות, מהדורות חדשות והצצות מאחורי הקלעים. בלי ספאם.</p>
+        </div>
+        <form id="newsForm" novalidate>
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field">
+            <label class="visually-hidden" for="nl-email" data-i18n="news.email">כתובת אימייל</label>
+            <div class="inline-field">
+              <input id="nl-email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required aria-describedby="nl-email-err" dir="ltr">
+              <button class="btn btn--primary" type="submit" data-i18n="news.btn">הרשמה</button>
+            </div>
+            <span class="field-error" id="nl-email-err"></span>
+          </div>
+          <div class="field">
+            <label class="check"><input id="nl-consent" name="consent" type="checkbox" required aria-describedby="nl-consent-err"><span data-i18n="news.consent">אני מאשרת לקבל עדכונים ודיוורים מ-MAYA SWIM. אפשר להסיר את עצמי בכל עת.</span></label>
+            <span class="field-error" id="nl-consent-err"></span>
+          </div>
+          <div class="form-status" id="newsStatus" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--tint" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">יצירת קשר</p>
+        <h2 class="h2" id="contact-title" data-i18n-html="contact.title">בואי <em>נדבר</em></h2>
+        <p class="lead" data-i18n="contact.text">שאלה על דגם, הזמנה בהתאמה אישית או רעיון לשיתוף פעולה: אנחנו כאן.</p>
+        <div class="contact-cards">
+          <a class="contact-card js-wa" data-wa-msg="wa.general" href="#contact" target="_blank" rel="noopener">
+            <span class="contact-card__icon" aria-hidden="true"><svg><use href="#i-wa"/></svg></span>
+            <span><strong data-i18n="contact.wa.t">וואטסאפ</strong><span data-i18n="contact.wa.d">הדרך הכי מהירה</span></span>
+            <span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span>
+          </a>
+          <a class="contact-card js-ig" href="#contact" target="_blank" rel="noopener">
+            <span class="contact-card__icon" aria-hidden="true"><svg><use href="#i-ig"/></svg></span>
+            <span><strong data-i18n="contact.ig.t">אינסטגרם</strong><span class="js-ig-handle">@mayaswim</span></span>
+            <span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span>
+          </a>
+          <a class="contact-card js-mail" href="#contact">
+            <span class="contact-card__icon" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+            <span><strong data-i18n="contact.mail.t">אימייל</strong><span class="js-mail-text">hello@mayaswim.co.il</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel reveal" data-delay="1">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3 class="full" data-i18n="form.title">השאירי הודעה</h3>
+          <p class="form-note full" data-i18n="form.required">שדות המסומנים ב-* הם שדות חובה</p>
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field">
+            <label for="cf-name"><span data-i18n="form.name">שם מלא</span> <span class="req" aria-hidden="true">*</span></label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-err">
+            <span class="field-error" id="cf-name-err"></span>
+          </div>
+          <div class="field">
+            <label for="cf-email"><span data-i18n="form.email">אימייל</span> <span class="req" aria-hidden="true">*</span></label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-err" dir="ltr">
+            <span class="field-error" id="cf-email-err"></span>
+          </div>
+          <div class="field">
+            <label for="cf-phone" data-i18n="form.phone">טלפון (לא חובה)</label>
+            <input id="cf-phone" name="phone" type="tel" autocomplete="tel" dir="ltr">
+          </div>
+          <div class="field">
+            <label for="cf-subject" data-i18n="form.subject">נושא הפנייה</label>
+            <select id="cf-subject" name="subject">
+              <option value="custom" data-i18n="form.subject.custom">הזמנה בהתאמה אישית</option>
+              <option value="question" data-i18n="form.subject.question">שאלה על דגם</option>
+              <option value="collab" data-i18n="form.subject.collab">שיתוף פעולה</option>
+              <option value="other" data-i18n="form.subject.other">אחר</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-design" data-i18n="form.design">דגם שמעניין אותך</label>
+            <select id="cf-design" name="design"></select>
+          </div>
+          <div class="field">
+            <label for="cf-measure" data-i18n="form.measure">היקפים: חזה / מותן / ירכיים</label>
+            <input id="cf-measure" name="measurements" type="text" data-i18n-ph="form.measure.ph" placeholder="88 / 70 / 96" dir="ltr">
+          </div>
+          <div class="field full">
+            <label for="cf-message"><span data-i18n="form.message">ההודעה שלך</span> <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" required aria-describedby="cf-message-err"></textarea>
+            <span class="field-error" id="cf-message-err"></span>
+          </div>
+          <div class="field full">
+            <label class="check"><input id="cf-consent" name="consent" type="checkbox" required aria-describedby="cf-consent-err"><span data-i18n-html="form.consent">קראתי את <a href="privacy.html">מדיניות הפרטיות</a> ואני מסכימה לשמירת הפרטים לצורך מענה לפנייה.</span></label>
+            <span class="field-error" id="cf-consent-err"></span>
+          </div>
+          <div class="full"><button class="btn btn--primary btn--block" type="submit" data-i18n="form.send">שליחה</button></div>
+          <div class="form-status full" id="contactStatus" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top" data-i18n-aria="nav.home" aria-label="MAYA SWIM — לדף הבית">
+          <svg aria-hidden="true" style="color:#FFF4D6"><use href="#i-mark"/></svg>
+          <span class="logo__text"><span class="logo__name">MAYA</span><span class="logo__sub">SWIM</span></span>
+        </a>
+        <p data-i18n="footer.tagline">עיצוב מקורי. מהדורות מוגבלות.</p>
+      </div>
+      <nav aria-labelledby="ft-nav">
+        <h2 id="ft-nav" data-i18n="footer.nav">ניווט</h2>
+        <ul>
+          <li><a href="#collection" data-i18n="nav.collection">קולקציה</a></li>
+          <li><a href="#story" data-i18n="nav.story">הסיפור</a></li>
+          <li><a href="#sizes" data-i18n="nav.sizes">מדריך מידות</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">שאלות</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 data-i18n="footer.contact">יצירת קשר</h2>
+        <ul>
+          <li><a class="js-wa" data-wa-msg="wa.general" href="#contact" target="_blank" rel="noopener"><span data-i18n="contact.wa.t">וואטסאפ</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span></a></li>
+          <li><a class="js-ig" href="#contact" target="_blank" rel="noopener"><span data-i18n="contact.ig.t">אינסטגרם</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span></a></li>
+          <li><a class="js-mail" href="#contact"><span class="js-mail-text">hello@mayaswim.co.il</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.legal">מידע</h2>
+        <ul>
+          <li><a href="accessibility.html" data-i18n="footer.a11y">הצהרת נגישות</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">מדיניות פרטיות</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="margin:0">© <span id="year">2026</span> MAYA SWIM. <span data-i18n="footer.rights">כל הזכויות שמורות.</span></p>
+      <a href="#top" data-i18n="footer.top">חזרה למעלה</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating buttons & accessibility panel ===== -->
+<a class="fab fab--wa js-wa" data-wa-msg="wa.general" href="#contact" target="_blank" rel="noopener" data-i18n-aria="wa.float" aria-label="שיחה בוואטסאפ">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+<button class="fab fab--a11y" id="a11yBtn" type="button" aria-expanded="false" aria-controls="a11yPanel" data-i18n-aria="a11y.open" aria-label="תפריט נגישות">
+  <svg aria-hidden="true"><use href="#i-a11y"/></svg>
+</button>
+<div class="a11y-panel" id="a11yPanel" role="dialog" aria-modal="false" aria-labelledby="a11y-title" hidden>
+  <div class="a11y-panel__head">
+    <h2 id="a11y-title" data-i18n="a11y.title">הגדרות נגישות</h2>
+    <button class="icon-btn" type="button" data-a11y-close data-i18n-aria="a11y.close" aria-label="סגירת תפריט הנגישות"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="a11y-row">
+    <span data-i18n="a11y.textSize">גודל טקסט</span>
+    <span class="a11y-size">
+      <button class="icon-btn" type="button" data-a11y="smaller" data-i18n-aria="a11y.smaller" aria-label="הקטנת טקסט"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+      <button class="icon-btn" type="button" data-a11y="larger" data-i18n-aria="a11y.larger" aria-label="הגדלת טקסט"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+    </span>
+  </div>
+  <div class="a11y-grid">
+    <button class="a11y-toggle" type="button" data-a11y="contrast" aria-pressed="false"><svg aria-hidden="true"><use href="#i-contrast"/></svg><span data-i18n="a11y.contrast">ניגודיות גבוהה</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="links" aria-pressed="false"><svg aria-hidden="true"><use href="#i-link"/></svg><span data-i18n="a11y.links">הדגשת קישורים</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="font" aria-pressed="false"><svg aria-hidden="true"><use href="#i-font"/></svg><span data-i18n="a11y.font">גופן קריא</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="noanim" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg><span data-i18n="a11y.motion">עצירת אנימציות</span></button>
+  </div>
+  <div class="a11y-panel__foot">
+    <button type="button" data-a11y="reset" data-i18n="a11y.reset">איפוס הגדרות</button>
+    <a href="accessibility.html" data-i18n="a11y.statement">להצהרת הנגישות</a>
+  </div>
+</div>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

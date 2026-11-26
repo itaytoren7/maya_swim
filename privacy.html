@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>מדיניות פרטיות | MAYA SWIM</title>
+  <meta name="theme-color" content="#FFF1B8">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement, l = null, a = null;
+      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("maya-lang"); a = JSON.parse(localStorage.getItem("maya-a11y") || "null"); } catch (e) {}
+      if (l === "en") { d.lang = "en"; d.dir = "ltr"; }
+      if (a) {
+        if (a.scale) d.style.fontSize = [100, 112.5, 125, 137.5][a.scale] + "%";
+        ["contrast", "links", "font", "noanim"].forEach(function (k) { if (a[k]) d.classList.add("a11y-" + k); });
+      }
+    })();
+  </script>
+</head>
+<body data-page="privacy" data-title-key="page.privacy">
+
+<!-- ===== Icons (SVG sprite) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-mark" viewBox="0 0 48 48"><path d="M13 29 A11 11 0 0 1 35 29 Z" fill="#EBC15A"/><path d="M5 32 Q 10.5 28 16 32 T 27 32 T 38 32 T 44 31" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M10 38 Q 15.5 34 21 38 T 32 38 T 40 37.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.3 20.7l4.4-1.1A8.8 8.8 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.3c.3-.6.7-.6 1-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .5-.1.6l-.6.7c-.1.1-.1.3 0 .5a6.2 6.2 0 0 0 2.6 2.4c.2.1.4.1.5 0l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .9-.6 1.8-1.5 2-1 .3-2.4.1-4.2-1.1a9.8 9.8 0 0 1-3.2-3.6c-.6-1.2-.5-2.5-.1-3.4z" fill="currentColor"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-a11y" viewBox="0 0 24 24"><circle cx="12" cy="4.4" r="2" fill="currentColor"/><path d="M4.5 8.6c4.6 1.2 10.4 1.2 15 0M12 9.8v4.6m0 0l-3.4 6.2M12 14.4l3.4 6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sketch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l1.1-4.3L16.4 4.4a1.9 1.9 0 0 1 2.7 0l.5.5a1.9 1.9 0 0 1 0 2.7L9.3 17.9z"/><path d="M14.6 6.2l3.2 3.2M4 21.5h16"/></g></symbol>
+    <symbol id="i-fabric" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v12l-2.3 2.3L14.3 16 12 18.3 9.7 16l-2.4 2.3L5 16z"/><path d="M8.5 8h7M8.5 11.5h7"/></g></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6.5" cy="17.5" r="2.6"/><circle cx="17.5" cy="17.5" r="2.6"/><path d="M8.4 15.6L19 4M15.6 15.6L5 4"/></g></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1a1 1 0 0 1 .7.3l7 7a1 1 0 0 1 0 1.4l-8.1 8.1a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1-.3-.7z"/><circle cx="8.5" cy="8.5" r="1.6"/></g></symbol>
+    <symbol id="i-tape" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="11" r="6.5"/><circle cx="10" cy="11" r="2"/><path d="M10 17.5h10.5V14M13.5 17.5v-1.7M16.8 17.5v-1.7"/></g></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></g></symbol>
+    <symbol id="i-rings" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></g></symbol>
+    <symbol id="i-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1.2 1.2"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1.2-1.2"/></g></symbol>
+    <symbol id="i-font" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19L8 5h1l5 14M5 14.5h7"/><path d="M15.5 12.5h4.5V19M20 15.5h-2.8a1.7 1.7 0 0 0 0 3.5H20"/></g></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><g fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></g></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="skip">דלגי לתוכן הראשי</a>
+
+<header class="site-header legal-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" data-i18n-aria="nav.home" aria-label="MAYA SWIM — לדף הבית">
+      <svg aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="logo__text"><span class="logo__name">MAYA</span><span class="logo__sub">SWIM</span></span>
+    </a>
+    <div class="header-actions">
+      <a class="btn btn--ghost" href="index.html"><svg class="back-arrow" aria-hidden="true"><use href="#i-arrow"/></svg><span data-i18n="legal.back">חזרה לדף הבית</span></a>
+      <button class="icon-btn lang-btn" id="langBtn" type="button" lang="en" aria-label="Switch to English">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<article class="legal"><div class="container">
+<!-- לפני פרסום: השלימו את כל מה שמופיע בסוגריים מרובעים [ ]. זו תבנית כללית ולא ייעוץ משפטי; מומלץ שעורך/ת דין יעבור/תעבור עליה. -->
+<div data-only="he">
+  <h1>מדיניות פרטיות</h1>
+  <p class="meta">עודכן לאחרונה: [תאריך]</p>
+  <p>הפרטיות שלך חשובה לנו. המדיניות הזו מסבירה איזה מידע נאסף כשאת משתמשת באתר MAYA SWIM (להלן: "האתר"), למה הוא משמש, עם מי הוא משותף ואילו זכויות יש לך. אין חובה חוקית למסור לנו פרטים אישיים: מסירת פרטים בטפסים נעשית מרצונך ובהסכמתך, ובלעדיהם לא נוכל לחזור אלייך.</p>
+
+  <h2>מי אנחנו</h2>
+  <p>האתר מופעל על ידי [שם העסק או שם בעל/ת העסק], [מספר עוסק / ח.פ., אם יש]. לכל שאלה בנושא פרטיות אפשר לפנות אלינו בכתובת <a class="js-mail" href="#"><span class="js-mail-text">hello@mayaswim.co.il</span></a>.</p>
+
+  <h2>איזה מידע נאסף</h2>
+  <ul>
+    <li><strong>טופס יצירת קשר:</strong> שם, אימייל, טלפון (לא חובה), נושא הפנייה, הדגם שמעניין אותך, היקפי גוף אם בחרת למסור, ותוכן ההודעה.</li>
+    <li><strong>הרשמה לעדכונים:</strong> כתובת אימייל ואישור ההסכמה לקבלת דיוור.</li>
+    <li><strong>פנייה בוואטסאפ, באינסטגרם או במייל:</strong> המידע שתבחרי לשלוח לנו בערוצים האלה.</li>
+    <li><strong>מידע טכני:</strong> האתר מתארח בשירות GitHub Pages, שעשוי לרשום נתונים טכניים כמו כתובת IP לצורכי אבטחה ותפעול. האתר עצמו אינו משתמש בעוגיות (cookies), ואין בו כרגע כלים לניתוח תנועה או לפרסום. [אם תוסיפו בעתיד כלים כמו Google Analytics או פיקסל של Meta, עדכנו כאן.]</li>
+    <li><strong>הגדרות באתר:</strong> בחירת השפה והגדרות הנגישות נשמרות באחסון המקומי של הדפדפן שלך בלבד, ואינן נשלחות אלינו.</li>
+  </ul>
+
+  <h2>למה אנחנו משתמשים במידע</h2>
+  <ul>
+    <li>כדי לענות לפניות ולתאם הזמנות בהתאמה אישית.</li>
+    <li>כדי לשלוח עדכונים על השקות ומהדורות חדשות, רק למי שאישרה זאת במפורש.</li>
+    <li>כדי לטפל בהצעות לשיתופי פעולה.</li>
+  </ul>
+  <p>אנחנו לא מוכרים מידע אישי ולא משתמשים בו למטרות אחרות.</p>
+
+  <h2>עם מי המידע משותף</h2>
+  <p>המידע נשמר אצלנו ואצל ספקי שירות שעוזרים לנו להפעיל את האתר, רק במידה הנדרשת:</p>
+  <ul>
+    <li>שירות הטפסים [Formspree], שמעביר אלינו את הפניות מהאתר.</li>
+    <li>שירות הדיוור [שם השירות], אם נשתמש בו לשליחת עדכונים.</li>
+    <li>GitHub Pages, שמארח את האתר.</li>
+  </ul>
+  <p>חלק מספקי השירות פועלים מחוץ לישראל, ולכן המידע עשוי להישמר בשרתים בחו"ל. לחיצה על קישור לוואטסאפ או לאינסטגרם מעבירה אותך לשירות חיצוני שחלה עליו מדיניות הפרטיות שלו. מידע עשוי להימסר לרשויות אם נידרש לכך על פי דין.</p>
+
+  <h2>דיוור ועדכונים</h2>
+  <p>נשלח עדכונים רק אם סימנת הסכמה לכך. בכל הודעה יופיע קישור להסרה, ואפשר גם לבקש הסרה בכל עת בפנייה אלינו.</p>
+
+  <h2>הזכויות שלך</h2>
+  <p>לפי חוק הגנת הפרטיות, התשמ"א-1981, יש לך זכות לעיין במידע שנשמר עלייך, ולבקש לתקן או למחוק מידע שאינו נכון, שלם, ברור או מעודכן. כדי לממש את הזכויות האלה, פני אלינו ונטפל בבקשה בהקדם.</p>
+
+  <h2>שמירה ואבטחה</h2>
+  <p>האתר מוגש בחיבור מאובטח (HTTPS). אנחנו אוספים רק את המידע הדרוש, שומרים אותו כל עוד יש בו צורך למטרות שלמעלה, ונוקטים אמצעים סבירים כדי להגן עליו. עם זאת, אין שיטה שמבטיחה הגנה מוחלטת.</p>
+
+  <h2>קטינים</h2>
+  <p>אם את מתחת לגיל 18, אנחנו ממליצים לפנות אלינו בליווי הורה או אפוטרופוס.</p>
+
+  <h2>שינויים במדיניות</h2>
+  <p>ייתכן שנעדכן את המדיניות מעת לעת. הגרסה העדכנית תמיד תופיע בעמוד הזה, עם תאריך העדכון האחרון.</p>
+
+  <h2>יצירת קשר</h2>
+  <div class="contact-box">
+    <p><strong>אימייל:</strong> <a class="js-mail" href="#"><span class="js-mail-text">hello@mayaswim.co.il</span></a></p>
+    <p><strong>וואטסאפ:</strong> <a class="js-wa" data-wa-msg="wa.general" href="#" target="_blank" rel="noopener">לשליחת הודעה<span class="visually-hidden"> (נפתח בחלון חדש)</span></a></p>
+  </div>
+</div>
+
+<div data-only="en" lang="en" dir="ltr">
+  <h1>Privacy policy</h1>
+  <p class="meta">Last updated: [date]</p>
+  <p>Your privacy matters to us. This policy explains what information is collected when you use the MAYA SWIM website (the "site"), how it's used, who it's shared with and what rights you have. You are not legally required to give us personal details: anything you submit in our forms is given voluntarily and with your consent, and without it we can't get back to you.</p>
+
+  <h2>Who we are</h2>
+  <p>The site is operated by [business or owner name], [business ID, if any]. For any privacy question, contact us at <a class="js-mail" href="#"><span class="js-mail-text">hello@mayaswim.co.il</span></a>.</p>
+
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>Contact form:</strong> name, email, phone (optional), subject, the design you're interested in, body measurements if you choose to share them, and your message.</li>
+    <li><strong>Updates sign-up:</strong> your email address and your consent to receive newsletters.</li>
+    <li><strong>WhatsApp, Instagram or email:</strong> whatever you choose to send us through those channels.</li>
+    <li><strong>Technical data:</strong> the site is hosted on GitHub Pages, which may log technical data such as IP addresses for security and operations. The site itself does not use cookies and currently has no analytics or advertising tools. [If you add tools such as Google Analytics or a Meta pixel in the future, update this section.]</li>
+    <li><strong>Site settings:</strong> your language and accessibility choices are saved in your browser's local storage only and are never sent to us.</li>
+  </ul>
+
+  <h2>How we use it</h2>
+  <ul>
+    <li>To answer inquiries and arrange made-to-order requests.</li>
+    <li>To send updates about launches and new editions, only to people who explicitly agreed.</li>
+    <li>To handle collaboration proposals.</li>
+  </ul>
+  <p>We don't sell personal information or use it for any other purpose.</p>
+
+  <h2>Who we share it with</h2>
+  <p>Information is kept by us and by service providers that help us run the site, only as needed:</p>
+  <ul>
+    <li>The form service [Formspree], which forwards inquiries from the site to us.</li>
+    <li>The newsletter service [service name], if we use one to send updates.</li>
+    <li>GitHub Pages, which hosts the site.</li>
+  </ul>
+  <p>Some providers operate outside Israel, so information may be stored on servers abroad. Clicking a WhatsApp or Instagram link takes you to an external service with its own privacy policy. Information may be disclosed to authorities where required by law.</p>
+
+  <h2>Newsletters</h2>
+  <p>We only send updates if you ticked the consent box. Every message includes an unsubscribe link, and you can ask to be removed at any time by contacting us.</p>
+
+  <h2>Your rights</h2>
+  <p>Under Israel's Protection of Privacy Law, 1981, you have the right to review the information we hold about you and to ask us to correct or delete information that is inaccurate, incomplete, unclear or out of date. To exercise these rights, contact us and we'll handle your request promptly.</p>
+
+  <h2>Storage and security</h2>
+  <p>The site is served over a secure connection (HTTPS). We collect only what we need, keep it only as long as it's needed for the purposes above, and take reasonable steps to protect it. No method, however, guarantees absolute security.</p>
+
+  <h2>Minors</h2>
+  <p>If you are under 18, we recommend contacting us together with a parent or guardian.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy from time to time. The current version will always appear on this page with its last-updated date.</p>
+
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p><strong>Email:</strong> <a class="js-mail" href="#"><span class="js-mail-text">hello@mayaswim.co.il</span></a></p>
+    <p><strong>WhatsApp:</strong> <a class="js-wa" data-wa-msg="wa.general" href="#" target="_blank" rel="noopener">Send a message<span class="visually-hidden"> (opens in a new window)</span></a></p>
+  </div>
+</div>
+</div></article>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" data-i18n-aria="nav.home" aria-label="MAYA SWIM — לדף הבית">
+          <svg aria-hidden="true" style="color:#FFF4D6"><use href="#i-mark"/></svg>
+          <span class="logo__text"><span class="logo__name">MAYA</span><span class="logo__sub">SWIM</span></span>
+        </a>
+        <p data-i18n="footer.tagline">עיצוב מקורי. מהדורות מוגבלות.</p>
+      </div>
+      <nav aria-labelledby="ft-nav">
+        <h2 id="ft-nav" data-i18n="footer.nav">ניווט</h2>
+        <ul>
+          <li><a href="index.html#collection" data-i18n="nav.collection">קולקציה</a></li>
+          <li><a href="index.html#story" data-i18n="nav.story">הסיפור</a></li>
+          <li><a href="index.html#sizes" data-i18n="nav.sizes">מדריך מידות</a></li>
+          <li><a href="index.html#faq" data-i18n="nav.faq">שאלות</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 data-i18n="footer.contact">יצירת קשר</h2>
+        <ul>
+          <li><a class="js-wa" data-wa-msg="wa.general" href="index.html#contact" target="_blank" rel="noopener"><span data-i18n="contact.wa.t">וואטסאפ</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span></a></li>
+          <li><a class="js-ig" href="index.html#contact" target="_blank" rel="noopener"><span data-i18n="contact.ig.t">אינסטגרם</span><span class="visually-hidden" data-i18n="contact.newtab">(נפתח בחלון חדש)</span></a></li>
+          <li><a class="js-mail" href="index.html#contact"><span class="js-mail-text">hello@mayaswim.co.il</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.legal">מידע</h2>
+        <ul>
+          <li><a href="accessibility.html" data-i18n="footer.a11y">הצהרת נגישות</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">מדיניות פרטיות</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="margin:0">© <span id="year">2026</span> MAYA SWIM. <span data-i18n="footer.rights">כל הזכויות שמורות.</span></p>
+      <a href="#main" data-i18n="footer.top">חזרה למעלה</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating buttons & accessibility panel ===== -->
+<a class="fab fab--wa js-wa" data-wa-msg="wa.general" href="index.html#contact" target="_blank" rel="noopener" data-i18n-aria="wa.float" aria-label="שיחה בוואטסאפ">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+<button class="fab fab--a11y" id="a11yBtn" type="button" aria-expanded="false" aria-controls="a11yPanel" data-i18n-aria="a11y.open" aria-label="תפריט נגישות">
+  <svg aria-hidden="true"><use href="#i-a11y"/></svg>
+</button>
+<div class="a11y-panel" id="a11yPanel" role="dialog" aria-modal="false" aria-labelledby="a11y-title" hidden>
+  <div class="a11y-panel__head">
+    <h2 id="a11y-title" data-i18n="a11y.title">הגדרות נגישות</h2>
+    <button class="icon-btn" type="button" data-a11y-close data-i18n-aria="a11y.close" aria-label="סגירת תפריט הנגישות"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="a11y-row">
+    <span data-i18n="a11y.textSize">גודל טקסט</span>
+    <span class="a11y-size">
+      <button class="icon-btn" type="button" data-a11y="smaller" data-i18n-aria="a11y.smaller" aria-label="הקטנת טקסט"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+      <button class="icon-btn" type="button" data-a11y="larger" data-i18n-aria="a11y.larger" aria-label="הגדלת טקסט"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+    </span>
+  </div>
+  <div class="a11y-grid">
+    <button class="a11y-toggle" type="button" data-a11y="contrast" aria-pressed="false"><svg aria-hidden="true"><use href="#i-contrast"/></svg><span data-i18n="a11y.contrast">ניגודיות גבוהה</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="links" aria-pressed="false"><svg aria-hidden="true"><use href="#i-link"/></svg><span data-i18n="a11y.links">הדגשת קישורים</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="font" aria-pressed="false"><svg aria-hidden="true"><use href="#i-font"/></svg><span data-i18n="a11y.font">גופן קריא</span></button>
+    <button class="a11y-toggle" type="button" data-a11y="noanim" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg><span data-i18n="a11y.motion">עצירת אנימציות</span></button>
+  </div>
+  <div class="a11y-panel__foot">
+    <button type="button" data-a11y="reset" data-i18n="a11y.reset">איפוס הגדרות</button>
+    <a href="accessibility.html" data-i18n="a11y.statement">להצהרת הנגישות</a>
+  </div>
+</div>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
